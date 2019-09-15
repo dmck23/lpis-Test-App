@@ -1,0 +1,19 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-column-gap: 1px;
+}
+
+.grid-container > div {
+  text-align: left;
+}
+
+.grid-container > div > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.Heading {
+  font-size: large;
+  font-weight: bold;
+}

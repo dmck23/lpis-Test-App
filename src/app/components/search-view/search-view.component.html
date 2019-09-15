@@ -1,0 +1,9 @@
+<form #eventSearch class="event-search-form" (ngSubmit)="onSubmit()">
+  <mat-form-field class="event-search-full-width">
+    <input matInput placeholder="Please enter event Id" [formControl]="eventFc">
+  </mat-form-field>
+</form>
+
+<div *ngIf="dealsForEvent">
+  <app-result-view [dealsForEvent]="dealsForEvent"></app-result-view>
+</div>

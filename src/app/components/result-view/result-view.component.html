@@ -1,0 +1,15 @@
+<app-event [eventView]="dealsForEvent.event"></app-event>
+<p>
+<mat-divider></mat-divider>
+<p></p>
+<p>
+  <h2>Deals</h2>
+
+<div *ngFor="let deal of dealsForEvent.effectedDeals">
+  <app-deal-with-loss [dealWithLoss]="deal"></app-deal-with-loss>
+  <p>
+    <mat-divider></mat-divider>
+  </p>
+</div>
+
+

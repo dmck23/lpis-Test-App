@@ -1,0 +1,26 @@
+<div class="grid-container">
+  <div class="Heading">Zone</div>
+  <div class="Heading">Peril</div>
+  <div class="Heading">Retention</div>
+  <div class="Heading">Limit</div>
+</div>
+
+<div class="grid-container">
+  <div>
+    <ul>
+      <li *ngFor="let region of dealWithLoss.deal.regions">
+        {{region.zone}}
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li *ngFor="let peril of dealWithLoss.deal.perils">
+        {{peril.perilType}}
+      </li>
+    </ul>
+  </div>
+  <div>{{dealWithLoss.deal.retention}}</div>
+  <div>{{dealWithLoss.deal.limit}}</div>
+</div>
+<div>Total Loss : {{dealWithLoss.companyLoss}}</div>
